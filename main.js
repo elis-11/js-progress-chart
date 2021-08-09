@@ -27,7 +27,7 @@ const listGoods = [
     img: "img/j-balla-photography-oMzfu2sXkrE-unsplash.jpg",
   },
   {
-    name: "Ida Müllenberg",
+    name: "Ida Busse",
     cost: 362,
     rated: 8.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
@@ -52,7 +52,7 @@ const listGoods = [
     cost: 919,
     rated: 3.9,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
-    img: "img/jarritos-mexican-soda-PPu_8q2zs2U-unsplash .jpg",
+    img: "img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg",
   },
   {
     name: "Jörg Müller",
@@ -73,14 +73,14 @@ const listGoods = [
     cost: 835,
     rated: 3.1,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+    img: 'img/xps-dpbXgTh0Lac-unsplash.jpg'
   },
   {
-    name: "Elisa Göbel",
+    name: "Ella Göbel",
     cost: 526,
     rated: 7.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+    img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg'
   },
 
 ];
