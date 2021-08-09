@@ -66,10 +66,10 @@ const listGoods = [
     cost: 327,
     rated: 8.6,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+    img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg'
   },
   {
-    name: "Ella Heller",
+    name: "Gerda Heller",
     cost: 835,
     rated: 3.1,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
@@ -77,7 +77,7 @@ const listGoods = [
   },
   {
     name: "Elisa Göbel",
-    cost: 926,
+    cost: 526,
     rated: 7.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
