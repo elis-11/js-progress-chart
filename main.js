@@ -61,6 +61,27 @@ const listGoods = [
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
   },
+  {
+    name: "Alex Wolf",
+    cost: 327,
+    rated: 8.6,
+    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+  },
+  {
+    name: "Ella Heller",
+    cost: 835,
+    rated: 3.1,
+    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+  },
+  {
+    name: "Elisa Göbel",
+    cost: 926,
+    rated: 7.4,
+    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
+  },
 
 ];
 
