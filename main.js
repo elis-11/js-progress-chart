@@ -1,51 +1,63 @@
 const listGoods = [
     {
-        name: 'Laptop Apple MacBook Air 13 i5 1.8/8Gb/128SSD',
-        cost: 996,
-        rated: 4.8,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop1.jpg?raw=true'
+        name: 'Simon Pahl',
+        cost: 748,
+        rated: 7.2,
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop1.jpg?raw=true'
+        img: ''
+
     },
     {
-        name: 'Laptop Lenovo IdeaPad 330-15IKB',
-        cost: 536,
+        name: 'Jennyfer Hartmann',
+        cost: 236,
         rated: 4.6,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
+        img: ''
+
     },
     {
-        name: 'Laptop Apple MacBook Pro 13 i5 2.3/8/128Gb SG',
-        cost: 1533,
+        name: 'Cornelia Oladunmade',
+        cost: 153,
         rated: 4.5,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
+        img: ''
+
     },
     {
-        name: 'Laptop HP Pavilion 13-an0072ur 5WC37EA',
+        name: 'Phillip Wagner',
         cost: 705,
         rated: 4.1,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop4.jpg?raw=true'
+        img: ''
     },
     {
-        name: 'Laptop Acer Nitro 5 AN515-42-R0HW NH.Q3RER.006',
+        name: 'Sahra Weber',
         cost: 919,
         rated: 3.9,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
+        img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg'
     },
     {
-        name: 'Laptop ASUS F540MB-GQ102T',
+        name: 'Silke Fischer',
         cost: 383,
         rated: 3.8,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
+        img: ''
+
     },
     {
-        name: 'Laptop Apple MacBook Pro 13 i5 2.3/8/256Gb SG',
+        name: 'Ricci Schmidt',
         cost: 1763,
         rated: 3.5,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
+        img: ''
     },
     {
-        name: 'Laptop Acer Swift 3 SF314-54-35YY NX.GYGER.007',
+        name: 'Jörg Müller',
         cost: 674,
         rated: 3.4,
-        img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+        // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+        img: ''
+
     }
 ];
 
@@ -61,7 +73,7 @@ const addGoods = () => {
             `<div class="goods">
                 <img src="${el.img}" alt="">
                 <h3 class="goods-text">${el.name}</h3>
-                <p class="goods-text">${el.cost} EUR</p>
+                <p class="goods-text">${el.cost} POINTS</p>
             </div>`
     })
 
