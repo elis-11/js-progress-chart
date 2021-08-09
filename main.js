@@ -12,7 +12,7 @@ const listGoods = [
         cost: 236,
         rated: 4.6,
         // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
-        img: ''
+        img: 'img/freestocks-yqBKaF1KecM-unsplash.jpg'
 
     },
     {
@@ -34,29 +34,29 @@ const listGoods = [
         cost: 919,
         rated: 3.9,
         // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
-        img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg'
+        img: 'img/jarritos-mexican-soda-PPu_8q2zs2U-unsplash .jpg'
     },
     {
         name: 'Silke Fischer',
         cost: 383,
         rated: 3.8,
         // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
-        img: ''
-
+        img: 'img/katie-polansky-TsHSW89wjGU-unsplash.jpg'
+        
     },
     {
         name: 'Ricci Schmidt',
         cost: 1763,
         rated: 3.5,
         // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
-        img: ''
+        img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg'
     },
     {
         name: 'Jörg Müller',
         cost: 674,
         rated: 3.4,
         // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-        img: ''
+        img: 'img/georgi-kalaydzhiev-i5w0Yz3s3JQ-unsplash.jpg'
 
     }
 ];
