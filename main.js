@@ -118,9 +118,9 @@ const dropDown = () => {
 const sortGoods = (event) => {
   listGoods.sort((a, b) => {
     switch (event.target.innerHTML) {
-      case "Points (high-low)":
+      case "Price (high-low)":
         return b.cost - a.cost;
-      case "Points (low-high)":
+      case "Price (low-high)":
         return a.cost - b.cost;
       case "Top Rated":
         return b.rated - a.rated;
