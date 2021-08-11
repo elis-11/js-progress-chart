@@ -1,4 +1,5 @@
-const listGoods = [
+let listGoods = [
+
   {
     name: 'Simone Pahl',
     // level: 748,
@@ -150,12 +151,18 @@ const listGoods = [
       html: 5,
       css: 83,
       js: 78,
-      react: 2,
+      react: 92,
     },
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
   },
 ];
+
+listGoods = listGoods.map((obj) => {
+  obj.skilsTotal = obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
+  return obj;
+});
+console.log(listGoods);
 const dropDownList = document.querySelector('.drop-down-list'),
   dropSownListOption = document.querySelectorAll('.drop-down-list__option'),
   showcaseGoods = document.querySelector('.showcase-goods');
@@ -194,9 +201,9 @@ const sortGoods = (event) => {
   listGoods.sort((a, b) => {
     switch (event.target.innerHTML) {
       case 'Points (high-low)':
-        return b.level - a.level;
+        return b.skilsTotal - a.skilsTotal;
       case 'Points (low-high)':
-        return a.level - b.level;
+        return a.skilsTotal - b.skilsTotal;
       case 'Top Rated':
         return b.rated - a.rated;
     }
