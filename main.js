@@ -162,7 +162,7 @@ listGoods = listGoods.map((obj) => {
   obj.skilsTotal = obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
   return obj;
 });
-console.log(listGoods);
+// console.log(listGoods);
 const dropDownList = document.querySelector('.drop-down-list'),
   dropSownListOption = document.querySelectorAll('.drop-down-list__option'),
   showcaseGoods = document.querySelector('.showcase-goods');
