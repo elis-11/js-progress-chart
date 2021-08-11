@@ -1,83 +1,83 @@
 const listGoods = [
   {
     name: "Simone Pahl",
-    cost: 748,
+    level: 748,
     rated: 7.2,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop1.jpg?raw=true'
     img: "img/jarritos-mexican-soda-DPbemOrlS6A-unsplash.jpg",
   },
   {
     name: "Jennyfer Hartmann",
-    cost: 236,
+    level: 236,
     rated: 4.6,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
     img: "img/freestocks-yqBKaF1KecM-unsplash.jpg",
   },
   {
     name: "Cornelia Oladunmade",
-    cost: 153,
+    level: 153,
     rated: 4.5,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
     img: "img/jerry-wang-nYyCWnGdzk8-unsplash.jpg",
   },
   {
     name: "Phillip Wagner",
-    cost: 705,
+    level: 705,
     rated: 4.1,
     img: "img/j-balla-photography-oMzfu2sXkrE-unsplash.jpg",
   },
   {
     name: "Ida Busse",
-    cost: 362,
+    level: 362,
     rated: 8.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: "img/hu-jiarui-6nz8asjBssw-unsplash.jpg",
   },
   {
     name: "Silke Fischer",
-    cost: 383,
+    level: 383,
     rated: 3.8,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
     img: "img/katie-polansky-TsHSW89wjGU-unsplash.jpg",
   },
   {
     name: "Ricci Schmidt",
-    cost: 1763,
+    level: 1763,
     rated: 3.5,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
     img: "img/sami-jms--wey-hCgW6g-unsplash.jpg",
   },
   {
     name: "Sahra Weber",
-    cost: 919,
+    level: 919,
     rated: 3.9,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
     img: "img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg",
   },
   {
     name: "Jörg Müller",
-    cost: 674,
+    level: 674,
     rated: 3.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
   },
   {
     name: "Alex Wolf",
-    cost: 327,
+    level: 327,
     rated: 8.6,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg'
   },
   {
     name: "Gerda Heller",
-    cost: 835,
+    level: 835,
     rated: 3.1,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/xps-dpbXgTh0Lac-unsplash.jpg'
   },
   {
     name: "Ella Göbel",
-    cost: 526,
+    level: 526,
     rated: 7.4,
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg'
@@ -95,7 +95,7 @@ const addGoods = () => {
     showcaseGoods.innerHTML += `<div class="goods">
                 <img src="${el.img}" alt="">
                 <h3 class="goods-text">${el.name}</h3>
-                <p class="goods-text">${el.cost} POINTS</p>
+                <p class="goods-text">${el.level} POINTS</p>
             </div>`;
   });
 
@@ -119,9 +119,9 @@ const sortGoods = (event) => {
   listGoods.sort((a, b) => {
     switch (event.target.innerHTML) {
       case "Points (high-low)":
-        return b.cost - a.cost;
+        return b.level - a.level;
       case "Points (low-high)":
-        return a.cost - b.cost;
+        return a.level - b.level;
       case "Top Rated":
         return b.rated - a.rated;
     }
