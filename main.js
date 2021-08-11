@@ -38,7 +38,7 @@ let listGoods = [
       react: 97,
     },
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
-    img: 'img/jerry-wang-nYyCWnGdzk8-unsplash.jpg',
+    img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
   },
   {
     name: 'Phillip Wagner',
@@ -84,7 +84,7 @@ let listGoods = [
     rated: 3.5,
     skils: {
       html: 137,
-      css: 75,
+      css: 78,
       js: 112,
       react: 136,
     },
@@ -105,6 +105,19 @@ let listGoods = [
     img: 'img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg',
   },
   {
+    name: 'Ella Göbel',
+    // level: 526,
+    rated: 7.4,
+    skils: {
+      html: 76,
+      css: 83,
+      js: 78,
+      react: 92,
+    },
+    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    img: 'img/jerry-wang-nYyCWnGdzk8-unsplash.jpg',
+  },
+  {
     name: 'Jörg Müller',
     // level: 674,
     rated: 3.4,
@@ -116,19 +129,6 @@ let listGoods = [
     },
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/danilo-borges-rxKuz0NWoXk-unsplash.jpg',
-  },
-  {
-    name: 'Alex Wolf',
-    // level: 327,
-    rated: 8.6,
-    skils: {
-      html: 121,
-      css: 78,
-      js: 96,
-      react: 84,
-    },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-    img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg',
   },
   {
     name: 'Gerda Heller',
@@ -144,17 +144,17 @@ let listGoods = [
     img: 'img/xps-dpbXgTh0Lac-unsplash.jpg',
   },
   {
-    name: 'Ella Göbel',
-    // level: 526,
-    rated: 7.4,
+    name: 'Alex Wolf',
+    // level: 327,
+    rated: 8.6,
     skils: {
-      html: 5,
-      css: 83,
-      js: 78,
-      react: 92,
+      html: 121,
+      css: 78,
+      js: 96,
+      react: 84,
     },
     // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
-    img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
+    img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg',
   },
 ];
 
