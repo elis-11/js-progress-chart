@@ -86,14 +86,14 @@ nav {
     border-bottom: 1px solid #677d81;
   }
   .arrow-bottom {
-    background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/bottom-arrow.png?raw=true');
+    /* background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/bottom-arrow.png?raw=true'); */
     background-size: cover;
     height: 15px;
     width: 15px;
   }
   
   .arrow-top {
-    background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/top-arrow.png?raw=true');
+    /* background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/top-arrow.png?raw=true'); */
     background-size: cover;
     height: 15px;
     width: 15px;
@@ -161,8 +161,8 @@ nav {
   }
   
 .info-block h2 {
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 0;
   }
   
