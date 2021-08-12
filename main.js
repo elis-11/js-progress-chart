@@ -1,5 +1,4 @@
-let listGoods = [
-
+let listMembers = [
   {
     name: 'Simone Pahl',
     // level: 748,
@@ -10,7 +9,7 @@ let listGoods = [
       react: 105,
     },
     rated: 7.2,
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop1.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop1.jpg?raw=true'
     img: 'img/jarritos-mexican-soda-DPbemOrlS6A-unsplash.jpg',
   },
   {
@@ -24,7 +23,7 @@ let listGoods = [
     },
     rated: 4.6,
 
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop3.jpg?raw=true'
     img: 'img/freestocks-yqBKaF1KecM-unsplash.jpg',
   },
   {
@@ -37,7 +36,7 @@ let listGoods = [
       js: 128,
       react: 97,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop2.jpg?raw=true'
     img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
   },
   {
@@ -62,7 +61,7 @@ let listGoods = [
       js: 73,
       react: 89,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/hu-jiarui-6nz8asjBssw-unsplash.jpg',
   },
   {
@@ -75,7 +74,7 @@ let listGoods = [
       js: 94,
       react: 127,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop6.jpg?raw=true'
     img: 'img/katie-polansky-TsHSW89wjGU-unsplash.jpg',
   },
   {
@@ -88,7 +87,7 @@ let listGoods = [
       js: 112,
       react: 136,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop7.jpg?raw=true'
     img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg',
   },
   {
@@ -101,7 +100,7 @@ let listGoods = [
       js: 83,
       react: 119,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop5.jpg?raw=true'
     img: 'img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg',
   },
   {
@@ -114,7 +113,7 @@ let listGoods = [
       js: 78,
       react: 92,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/jerry-wang-nYyCWnGdzk8-unsplash.jpg',
   },
   {
@@ -127,7 +126,7 @@ let listGoods = [
       js: 79,
       react: 68,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/danilo-borges-rxKuz0NWoXk-unsplash.jpg',
   },
   {
@@ -140,7 +139,7 @@ let listGoods = [
       js: 78,
       react: 52,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/xps-dpbXgTh0Lac-unsplash.jpg',
   },
   {
@@ -153,31 +152,31 @@ let listGoods = [
       js: 96,
       react: 84,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
+    // img: 'https://github.com/egormolchanov/sort-members/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg',
   },
 ];
 
-listGoods = listGoods.map((obj) => {
+listMembers = listMembers.map((obj) => {
   obj.skilsTotal = obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
   return obj;
 });
-// console.log(listGoods);
-const dropDownList = document.querySelector('.drop-down-list'),
-  dropSownListOption = document.querySelectorAll('.drop-down-list__option'),
-  showcaseGoods = document.querySelector('.showcase-goods');
+// console.log(listMembers);
+const dropDownList = document.querySelector('.drop-down-list');
+const dropSownListOption = document.querySelectorAll('.drop-down-list__option');
+const showcaseembers = document.querySelector('.showcase-members');
 
 const addGoods = () => {
-  showcaseGoods.innerHTML = '';
-  listGoods.forEach((el) => {
-    showcaseGoods.innerHTML += `<div class="goods">
+  showcaseembers.innerHTML = '';
+  listMembers.forEach((el) => {
+    showcaseembers.innerHTML += `<div class="members">
                 <img src="${el.img}" alt="">
-                <h3 class="goods-text">${el.name}</h3>
+                <h3 class="members-text">${el.name}</h3>
                 <div>HTML: ${el.skils ? el.skils.html : ' '}</div>
                 <div>CSS: ${el.skils ? el.skils.css : ' '}</div>
                 <div>JS: ${el.skils ? el.skils.js : ' '}</div>
                 <div>REACT: ${el.skils ? el.skils.react : ' '}</div>
-                <p class="goods-text">${
+                <p class="members-text">${
                   el.skils.html + el.skils.css + el.skils.js + el.skils.react
                 } POINTS</p>
             </div>`;
@@ -196,9 +195,9 @@ const dropDown = () => {
   arrowButton.classList.toggle('arrow-top');
 };
 
-//sorting goods
-const sortGoods = (event) => {
-  listGoods.sort((a, b) => {
+//sorting members
+const sortMembers = (event) => {
+  listMembers.sort((a, b) => {
     switch (event.target.innerHTML) {
       case 'Points (high-low)':
         return b.skilsTotal - a.skilsTotal;
@@ -212,12 +211,12 @@ const sortGoods = (event) => {
   addGoods();
 };
 dropDownList.addEventListener('click', dropDown);
-dropSownListOption.forEach((el) => el.addEventListener('click', sortGoods));
+dropSownListOption.forEach((el) => el.addEventListener('click', sortMembers));
 
 //search
 search.oninput = () => {
   const value = search.value.trim().toLowerCase(),
-    headlineGoods = document.querySelectorAll('.goods h3');
+    headlineGoods = document.querySelectorAll('.members h3');
 
   switch (value) {
     case '':
@@ -235,7 +234,7 @@ search.oninput = () => {
   }
 
   //check if search results are left
-  const resultСheck = Array.from(document.querySelectorAll('.goods')).every((el) =>
+  const resultСheck = Array.from(document.querySelectorAll('.members')).every((el) =>
     el.classList.contains('hide'),
   );
 
