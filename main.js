@@ -1,4 +1,4 @@
-let listGoods = [
+let listMembers = [
 
   {
     name: 'Simone Pahl',
@@ -158,18 +158,18 @@ let listGoods = [
   },
 ];
 
-listGoods = listGoods.map((obj) => {
+listMembers = listMembers.map((obj) => {
   obj.skilsTotal = obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
   return obj;
 });
-// console.log(listGoods);
+// console.log(listMembers);
 const dropDownList = document.querySelector('.drop-down-list'),
   dropSownListOption = document.querySelectorAll('.drop-down-list__option'),
   showcaseGoods = document.querySelector('.showcase-goods');
 
-const addGoods = () => {
+const addMembers = () => {
   showcaseGoods.innerHTML = '';
-  listGoods.forEach((el) => {
+  listMembers.forEach((el) => {
     showcaseGoods.innerHTML += `<div class="goods">
                 <img src="${el.img}" alt="">
                 <h3 class="goods-text">${el.name}</h3>
@@ -186,7 +186,7 @@ const addGoods = () => {
   noResults.classList.add('hide');
 };
 
-addGoods();
+addMembers();
 //drop down list
 const dropDown = () => {
   const dropDownListOptions = document.querySelector('.drop-down-list__options'),
@@ -197,8 +197,8 @@ const dropDown = () => {
 };
 
 //sorting goods
-const sortGoods = (event) => {
-  listGoods.sort((a, b) => {
+const sortMembers = (event) => {
+  listMembers.sort((a, b) => {
     switch (event.target.innerHTML) {
       case 'Points (high-low)':
         return b.skilsTotal - a.skilsTotal;
@@ -209,10 +209,10 @@ const sortGoods = (event) => {
     }
   });
 
-  addGoods();
+  addMembers();
 };
 dropDownList.addEventListener('click', dropDown);
-dropSownListOption.forEach((el) => el.addEventListener('click', sortGoods));
+dropSownListOption.forEach((el) => el.addEventListener('click', sortMembers));
 
 //search
 search.oninput = () => {
