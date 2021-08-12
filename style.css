@@ -86,14 +86,14 @@ nav {
     border-bottom: 1px solid #677d81;
   }
   .arrow-bottom {
-    /* background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/bottom-arrow.png?raw=true'); */
+    background-image: url('https://github.com/egormolchanov/sort-goods/blob/master/image/bottom-arrow.png?raw=true');
     background-size: cover;
     height: 15px;
     width: 15px;
   }
   
   .arrow-top {
-    /* background-image: url('https://github.com/egormolchanov/sort-members/blob/master/image/top-arrow.png?raw=true'); */
+    background-image: url('https://github.com/egormolchanov/sort-goods/blob/master/image/top-arrow.png?raw=true');
     background-size: cover;
     height: 15px;
     width: 15px;
@@ -101,9 +101,9 @@ nav {
   
 /*drop down list END*/
 /********************************************************/
-/*sorting members START*/
+/*sorting goods START*/
 
-.showcase-members {
+.showcase-goods {
     margin: 20px auto;
     max-width: 1100px;
     display: grid;
@@ -113,7 +113,7 @@ nav {
     justify-content: center;
   }
   
-  .members {
+  .goods {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -122,17 +122,17 @@ nav {
     padding: 10px;
     background: white;
   }
-  .members img {
+  .goods img {
     width: 100%;
   }
   
-  .members-text {
+  .goods-text {
     text-align: center;
     font-size: 16px;
     margin: 10px;
   }
   
-  /*sorting members END*/
+  /*sorting goods END*/
   
   #noResults {
     text-align: center;
@@ -161,8 +161,8 @@ nav {
   }
   
 .info-block h2 {
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 0;
   }
   
