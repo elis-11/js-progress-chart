@@ -2,7 +2,6 @@ let listMembers = [
 
   {
     name: 'Simone Pahl',
-    // level: 748,
     skils: {
       html: 95,
       css: 83,
@@ -10,12 +9,10 @@ let listMembers = [
       react: 105,
     },
     rated: 7.2,
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop1.jpg?raw=true'
     img: 'img/jarritos-mexican-soda-DPbemOrlS6A-unsplash.jpg',
   },
   {
     name: 'Jennyfer Hartmann',
-    // level: 236,
     skils: {
       html: 105,
       css: 131,
@@ -24,12 +21,10 @@ let listMembers = [
     },
     rated: 4.6,
 
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop3.jpg?raw=true'
     img: 'img/freestocks-yqBKaF1KecM-unsplash.jpg',
   },
   {
     name: 'Cornelia Oladunmade',
-    // level: 153,
     rated: 4.5,
     skils: {
       html: 118,
@@ -37,12 +32,10 @@ let listMembers = [
       js: 128,
       react: 97,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop2.jpg?raw=true'
     img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
   },
   {
     name: 'Phillip Wagner',
-    // level: 705,
     rated: 4.1,
     skils: {
       html: 117,
@@ -54,7 +47,6 @@ let listMembers = [
   },
   {
     name: 'Ida Busse',
-    // level: 362,
     rated: 8.4,
     skils: {
       html: 82,
@@ -62,12 +54,10 @@ let listMembers = [
       js: 73,
       react: 89,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/hu-jiarui-6nz8asjBssw-unsplash.jpg',
   },
   {
     name: 'Silke Fischer',
-    // level: 383,
     rated: 3.8,
     skils: {
       html: 97,
@@ -75,12 +65,10 @@ let listMembers = [
       js: 94,
       react: 127,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop6.jpg?raw=true'
     img: 'img/katie-polansky-TsHSW89wjGU-unsplash.jpg',
   },
   {
     name: 'Ricci Schmidt',
-    // level: 1763,
     rated: 3.5,
     skils: {
       html: 137,
@@ -88,12 +76,10 @@ let listMembers = [
       js: 112,
       react: 136,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop7.jpg?raw=true'
     img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg',
   },
   {
     name: 'Sahra Weber',
-    // level: 919,
     rated: 3.9,
     skils: {
       html: 124,
@@ -101,12 +87,10 @@ let listMembers = [
       js: 83,
       react: 119,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop5.jpg?raw=true'
     img: 'img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg',
   },
   {
     name: 'Ella Göbel',
-    // level: 526,
     rated: 7.4,
     skils: {
       html: 76,
@@ -114,12 +98,10 @@ let listMembers = [
       js: 78,
       react: 92,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/jerry-wang-nYyCWnGdzk8-unsplash.jpg',
   },
   {
     name: 'Jörg Müller',
-    // level: 674,
     rated: 3.4,
     skils: {
       html: 89,
@@ -127,12 +109,10 @@ let listMembers = [
       js: 79,
       react: 68,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/danilo-borges-rxKuz0NWoXk-unsplash.jpg',
   },
   {
     name: 'Gerda Heller',
-    // level: 835,
     rated: 3.1,
     skils: {
       html: 95,
@@ -140,12 +120,10 @@ let listMembers = [
       js: 78,
       react: 52,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/xps-dpbXgTh0Lac-unsplash.jpg',
   },
   {
     name: 'Alex Wolf',
-    // level: 327,
     rated: 8.6,
     skils: {
       html: 121,
@@ -153,7 +131,6 @@ let listMembers = [
       js: 96,
       react: 84,
     },
-    // img: 'https://github.com/egormolchanov/sort-goods/blob/master/image/laptop8.jpg?raw=true'
     img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg',
   },
 ];
