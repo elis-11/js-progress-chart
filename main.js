@@ -1,5 +1,4 @@
 let listMembers = [
-
   {
     name: 'Simone Pahl',
     skils: {
@@ -140,9 +139,9 @@ listMembers = listMembers.map((obj) => {
   return obj;
 });
 // console.log(listMembers);
-const dropDownList = document.querySelector('.drop-down-list'),
-  dropSownListOption = document.querySelectorAll('.drop-down-list__option'),
-  showcaseGoods = document.querySelector('.showcase-goods');
+const dropDownList = document.querySelector('.drop-down-list');
+const dropSownListOption = document.querySelectorAll('.drop-down-list__option');
+const showcaseGoods = document.querySelector('.showcase-goods');
 
 const addMembers = () => {
   showcaseGoods.innerHTML = '';
