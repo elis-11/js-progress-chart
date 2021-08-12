@@ -166,7 +166,7 @@ const dropDownList = document.querySelector('.drop-down-list');
 const dropSownListOption = document.querySelectorAll('.drop-down-list__option');
 const showcaseembers = document.querySelector('.showcase-members');
 
-const addGoods = () => {
+const addMembers = () => {
   showcaseembers.innerHTML = '';
   listMembers.forEach((el) => {
     showcaseembers.innerHTML += `<div class="members">
@@ -185,7 +185,7 @@ const addGoods = () => {
   noResults.classList.add('hide');
 };
 
-addGoods();
+addMembers();
 //drop down list
 const dropDown = () => {
   const dropDownListOptions = document.querySelector('.drop-down-list__options'),
@@ -208,7 +208,7 @@ const sortMembers = (event) => {
     }
   });
 
-  addGoods();
+  addMembers();
 };
 dropDownList.addEventListener('click', dropDown);
 dropSownListOption.forEach((el) => el.addEventListener('click', sortMembers));
@@ -216,16 +216,16 @@ dropSownListOption.forEach((el) => el.addEventListener('click', sortMembers));
 //search
 search.oninput = () => {
   const value = search.value.trim().toLowerCase(),
-    headlineGoods = document.querySelectorAll('.members h3');
+    headlineMembers = document.querySelectorAll('.members h3');
 
   switch (value) {
     case '':
-      headlineGoods.forEach((el) => {
+      headlineMembers.forEach((el) => {
         el.parentNode.classList.remove('hide');
       });
       break;
     default:
-      headlineGoods.forEach((el) => {
+      headlineMembers.forEach((el) => {
         el.innerText.toLowerCase().search(value) == -1
           ? el.parentNode.classList.add('hide')
           : el.parentNode.classList.remove('hide');
