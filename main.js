@@ -1,6 +1,6 @@
 let listMembers = [
   {
-    name: 'Simone Pahl',
+    name: "Simone Pahl",
     skils: {
       html: 95,
       css: 83,
@@ -8,10 +8,10 @@ let listMembers = [
       react: 105,
     },
     rated: 7.2,
-    img: 'img/jarritos-mexican-soda-DPbemOrlS6A-unsplash.jpg',
+    img: "img/jarritos-mexican-soda-DPbemOrlS6A-unsplash.jpg",
   },
   {
-    name: 'Jennyfer Hartmann',
+    name: "Jennyfer Hartmann",
     skils: {
       html: 105,
       css: 131,
@@ -20,10 +20,10 @@ let listMembers = [
     },
     rated: 4.6,
 
-    img: 'img/freestocks-yqBKaF1KecM-unsplash.jpg',
+    img: "img/freestocks-yqBKaF1KecM-unsplash.jpg",
   },
   {
-    name: 'Cornelia Oladunmade',
+    name: "Cornelia Oladunmade",
     rated: 4.5,
     skils: {
       html: 118,
@@ -31,10 +31,10 @@ let listMembers = [
       js: 128,
       react: 97,
     },
-    img: 'img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg',
+    img: "img/soheb-zaidi-ubD8ZGvJLVg-unsplash.jpg",
   },
   {
-    name: 'Phillip Wagner',
+    name: "Phillip Wagner",
     rated: 4.1,
     skils: {
       html: 117,
@@ -42,10 +42,10 @@ let listMembers = [
       js: 74,
       react: 128,
     },
-    img: 'img/j-balla-photography-oMzfu2sXkrE-unsplash.jpg',
+    img: "img/j-balla-photography-oMzfu2sXkrE-unsplash.jpg",
   },
   {
-    name: 'Ida Busse',
+    name: "Ida Busse",
     rated: 8.4,
     skils: {
       html: 82,
@@ -53,10 +53,10 @@ let listMembers = [
       js: 73,
       react: 89,
     },
-    img: 'img/hu-jiarui-6nz8asjBssw-unsplash.jpg',
+    img: "img/hu-jiarui-6nz8asjBssw-unsplash.jpg",
   },
   {
-    name: 'Silke Fischer',
+    name: "Silke Fischer",
     rated: 3.8,
     skils: {
       html: 97,
@@ -64,10 +64,10 @@ let listMembers = [
       js: 94,
       react: 127,
     },
-    img: 'img/katie-polansky-TsHSW89wjGU-unsplash.jpg',
+    img: "img/katie-polansky-TsHSW89wjGU-unsplash.jpg",
   },
   {
-    name: 'Ricci Schmidt',
+    name: "Ricci Schmidt",
     rated: 3.5,
     skils: {
       html: 137,
@@ -75,10 +75,10 @@ let listMembers = [
       js: 112,
       react: 136,
     },
-    img: 'img/sami-jms--wey-hCgW6g-unsplash.jpg',
+    img: "img/sami-jms--wey-hCgW6g-unsplash.jpg",
   },
   {
-    name: 'Sahra Weber',
+    name: "Sahra Weber",
     rated: 3.9,
     skils: {
       html: 124,
@@ -86,10 +86,10 @@ let listMembers = [
       js: 83,
       react: 119,
     },
-    img: 'img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg',
+    img: "img/jarritos-mexican-soda-3c5v9BGnMe8-unsplash.jpg",
   },
   {
-    name: 'Ella Göbel',
+    name: "Ella Göbel",
     rated: 7.4,
     skils: {
       html: 76,
@@ -97,10 +97,10 @@ let listMembers = [
       js: 78,
       react: 92,
     },
-    img: 'img/jerry-wang-nYyCWnGdzk8-unsplash.jpg',
+    img: "img/jerry-wang-nYyCWnGdzk8-unsplash.jpg",
   },
   {
-    name: 'Jörg Müller',
+    name: "Jörg Müller",
     rated: 3.4,
     skils: {
       html: 89,
@@ -108,10 +108,10 @@ let listMembers = [
       js: 79,
       react: 68,
     },
-    img: 'img/danilo-borges-rxKuz0NWoXk-unsplash.jpg',
+    img: "img/danilo-borges-rxKuz0NWoXk-unsplash.jpg",
   },
   {
-    name: 'Gerda Heller',
+    name: "Gerda Heller",
     rated: 3.1,
     skils: {
       html: 95,
@@ -119,10 +119,10 @@ let listMembers = [
       js: 78,
       react: 52,
     },
-    img: 'img/xps-dpbXgTh0Lac-unsplash.jpg',
+    img: "img/xps-dpbXgTh0Lac-unsplash.jpg",
   },
   {
-    name: 'Alex Wolf',
+    name: "Alex Wolf",
     rated: 8.6,
     skils: {
       html: 121,
@@ -130,96 +130,99 @@ let listMembers = [
       js: 96,
       react: 84,
     },
-    img: 'img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg',
+    img: "img/rafael-hoyos-weht--_1U2XG7tEY-unsplash.jpg",
   },
 ];
 
 listMembers = listMembers.map((obj) => {
-  obj.skilsTotal = obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
+  obj.skilsTotal =
+    obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
   return obj;
 });
 // console.log(listMembers);
-const dropDownList = document.querySelector('.drop-down-list');
-const dropSownListOption = document.querySelectorAll('.drop-down-list__option');
-const showcaseGoods = document.querySelector('.showcase-goods');
+const dropDownList = document.querySelector(".drop-down-list");
+const dropSownListOption = document.querySelectorAll(".drop-down-list__option");
+const showcaseGoods = document.querySelector(".showcase-goods");
 
 const addMembers = () => {
-  showcaseGoods.innerHTML = '';
+  showcaseGoods.innerHTML = "";
   listMembers.forEach((el) => {
     showcaseGoods.innerHTML += `<div class="goods">
                 <img src="${el.img}" alt="">
                 <h3 class="goods-text">${el.name}</h3>
-                <div>HTML: ${el.skils ? el.skils.html : ' '}</div>
-                <div>CSS: ${el.skils ? el.skils.css : ' '}</div>
-                <div>JS: ${el.skils ? el.skils.js : ' '}</div>
-                <div>REACT: ${el.skils ? el.skils.react : ' '}</div>
+                <div>HTML: ${el.skils ? el.skils.html : " "}</div>
+                <div>CSS: ${el.skils ? el.skils.css : " "}</div>
+                <div>JS: ${el.skils ? el.skils.js : " "}</div>
+                <div>REACT: ${el.skils ? el.skils.react : " "}</div>
                 <p class="goods-text">${
                   el.skils.html + el.skils.css + el.skils.js + el.skils.react
                 } POINTS</p>
             </div>`;
   });
 
-  noResults.classList.add('hide');
+  noResults.classList.add("hide");
 };
 
 addMembers();
 //drop down list
 const dropDown = () => {
-  const dropDownListOptions = document.querySelector('.drop-down-list__options'),
-    arrowButton = document.querySelector('.arrow-button');
-  dropDownListOptions.classList.toggle('hide');
-  arrowButton.classList.toggle('arrow-bottom');
-  arrowButton.classList.toggle('arrow-top');
+  const dropDownListOptions = document.querySelector(
+      ".drop-down-list__options"
+    ),
+    arrowButton = document.querySelector(".arrow-button");
+  dropDownListOptions.classList.toggle("hide");
+  arrowButton.classList.toggle("arrow-bottom");
+  arrowButton.classList.toggle("arrow-top");
 };
 
 //sorting goods
 const sortMembers = (event) => {
   listMembers.sort((a, b) => {
     switch (event.target.innerHTML) {
-      case 'Points (high-low)':
+      case "Points (high-low)":
         return b.skilsTotal - a.skilsTotal;
-      case 'Points (low-high)':
+      case "Points (low-high)":
         return a.skilsTotal - b.skilsTotal;
-      case 'Top Rated':
+      case "Top Rated":
         return b.rated - a.rated;
     }
   });
 
   addMembers();
 };
-dropDownList.addEventListener('click', dropDown);
-dropSownListOption.forEach((el) => el.addEventListener('click', sortMembers));
+dropDownList.addEventListener("click", dropDown);
+dropSownListOption.forEach((el) => el.addEventListener("click", sortMembers));
 
 //search
 search.oninput = () => {
   const value = search.value.trim().toLowerCase(),
-    headlineGoods = document.querySelectorAll('.goods h3');
+    headlineGoods = document.querySelectorAll(".goods h3");
 
   switch (value) {
-    case '':
+    case "":
       headlineGoods.forEach((el) => {
-        el.parentNode.classList.remove('hide');
+        el.parentNode.classList.remove("hide");
       });
       break;
     default:
       headlineGoods.forEach((el) => {
         el.innerText.toLowerCase().search(value) == -1
-          ? el.parentNode.classList.add('hide')
-          : el.parentNode.classList.remove('hide');
+          ? el.parentNode.classList.add("hide")
+          : el.parentNode.classList.remove("hide");
       });
       break;
   }
 
   //check if search results are left
-  const resultСheck = Array.from(document.querySelectorAll('.goods')).every((el) =>
-    el.classList.contains('hide'),
+  const resultСheck = Array.from(document.querySelectorAll(".goods")).every(
+    (el) => el.classList.contains("hide")
   );
 
   if (resultСheck) {
-    if (noResults.classList.contains('hide')) {
-      noResults.classList.remove('hide');
+    if (noResults.classList.contains("hide")) {
+      noResults.classList.remove("hide");
     }
-  } else if (!noResults.classList.contains('hide')) {
-    noResults.classList.add('hide');
+  } else if (!noResults.classList.contains("hide")) {
+    noResults.classList.add("hide");
   }
 };
