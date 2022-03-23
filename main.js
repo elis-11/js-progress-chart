@@ -1,7 +1,7 @@
 let listMembers = [
   {
     name: "Simone Pahl",
-    skils: {
+    skills: {
       html: 95,
       css: 83,
       js: 78,
@@ -12,7 +12,7 @@ let listMembers = [
   },
   {
     name: "Jennyfer Hartmann",
-    skils: {
+    skills: {
       html: 105,
       css: 131,
       js: 98,
@@ -25,7 +25,7 @@ let listMembers = [
   {
     name: "Cornelia Oladunmade",
     rated: 4.5,
-    skils: {
+    skills: {
       html: 118,
       css: 76,
       js: 128,
@@ -36,7 +36,7 @@ let listMembers = [
   {
     name: "Phillip Wagner",
     rated: 4.1,
-    skils: {
+    skills: {
       html: 117,
       css: 61,
       js: 74,
@@ -47,7 +47,7 @@ let listMembers = [
   {
     name: "Ida Busse",
     rated: 8.4,
-    skils: {
+    skills: {
       html: 82,
       css: 115,
       js: 73,
@@ -58,7 +58,7 @@ let listMembers = [
   {
     name: "Silke Fischer",
     rated: 3.8,
-    skils: {
+    skills: {
       html: 97,
       css: 113,
       js: 94,
@@ -69,7 +69,7 @@ let listMembers = [
   {
     name: "Ricci Schmidt",
     rated: 3.5,
-    skils: {
+    skills: {
       html: 137,
       css: 78,
       js: 112,
@@ -80,7 +80,7 @@ let listMembers = [
   {
     name: "Sahra Weber",
     rated: 3.9,
-    skils: {
+    skills: {
       html: 124,
       css: 92,
       js: 83,
@@ -91,7 +91,7 @@ let listMembers = [
   {
     name: "Ella Göbel",
     rated: 7.4,
-    skils: {
+    skills: {
       html: 76,
       css: 83,
       js: 78,
@@ -102,7 +102,7 @@ let listMembers = [
   {
     name: "Jörg Müller",
     rated: 3.4,
-    skils: {
+    skills: {
       html: 89,
       css: 116,
       js: 79,
@@ -113,7 +113,7 @@ let listMembers = [
   {
     name: "Gerda Heller",
     rated: 3.1,
-    skils: {
+    skills: {
       html: 95,
       css: 83,
       js: 78,
@@ -124,7 +124,7 @@ let listMembers = [
   {
     name: "Alex Wolf",
     rated: 8.6,
-    skils: {
+    skills: {
       html: 121,
       css: 78,
       js: 96,
@@ -135,8 +135,8 @@ let listMembers = [
 ];
 
 listMembers = listMembers.map((obj) => {
-  obj.skilsTotal =
-    obj.skils.html + obj.skils.css + obj.skils.js + obj.skils.react;
+  obj.skillsTotal =
+    obj.skills.html + obj.skills.css + obj.skills.js + obj.skills.react;
   return obj;
 });
 // console.log(listMembers);
@@ -150,12 +150,12 @@ const addMembers = () => {
     showcaseGoods.innerHTML += `<div class="goods">
                 <img src="${el.img}" alt="">
                 <h3 class="goods-text">${el.name}</h3>
-                <div>HTML: ${el.skils ? el.skils.html : " "}</div>
-                <div>CSS: ${el.skils ? el.skils.css : " "}</div>
-                <div>JS: ${el.skils ? el.skils.js : " "}</div>
-                <div>REACT: ${el.skils ? el.skils.react : " "}</div>
+                <div>HTML: ${el.skills ? el.skills.html : " "}</div>
+                <div>CSS: ${el.skills ? el.skills.css : " "}</div>
+                <div>JS: ${el.skills ? el.skills.js : " "}</div>
+                <div>REACT: ${el.skills ? el.skills.react : " "}</div>
                 <p class="goods-text">${
-                  el.skils.html + el.skils.css + el.skils.js + el.skils.react
+                  el.skills.html + el.skills.css + el.skills.js + el.skills.react
                 } POINTS</p>
             </div>`;
   });
@@ -180,9 +180,9 @@ const sortMembers = (event) => {
   listMembers.sort((a, b) => {
     switch (event.target.innerHTML) {
       case "Points (high-low)":
-        return b.skilsTotal - a.skilsTotal;
+        return b.skillsTotal - a.skillsTotal;
       case "Points (low-high)":
-        return a.skilsTotal - b.skilsTotal;
+        return a.skillsTotal - b.skillsTotal;
       case "Top Rated":
         return b.rated - a.rated;
     }
