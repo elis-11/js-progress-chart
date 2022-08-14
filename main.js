@@ -13,7 +13,7 @@ let listMembers = [
   {
     name: "Jennyfer Hartmann",
     skills: {
-      html: 105,
+      html: 138,
       css: 131,
       js: 98,
       react: 122,
@@ -70,7 +70,7 @@ let listMembers = [
     name: "Ricci Schmidt",
     rated: 3.5,
     skills: {
-      html: 137,
+      html: 105,
       css: 78,
       js: 112,
       react: 136,
@@ -144,18 +144,21 @@ const dropDownList = document.querySelector(".drop-down-list");
 const dropSownListOption = document.querySelectorAll(".drop-down-list__option");
 const showcaseGoods = document.querySelector(".showcase-goods");
 
-const addMembers = () => {
+const members = () => {
   showcaseGoods.innerHTML = "";
   listMembers.forEach((el) => {
     showcaseGoods.innerHTML += `<div class="goods">
-                <img src="${el.img}" alt="">
+                <img src="${el.img}" alt="${el.name}">
                 <h3 class="goods-text">${el.name}</h3>
                 <div>HTML: ${el.skills ? el.skills.html : " "}</div>
                 <div>CSS: ${el.skills ? el.skills.css : " "}</div>
                 <div>JS: ${el.skills ? el.skills.js : " "}</div>
                 <div>REACT: ${el.skills ? el.skills.react : " "}</div>
                 <p class="goods-text">${
-                  el.skills.html + el.skills.css + el.skills.js + el.skills.react
+                  el.skills.html +
+                  el.skills.css +
+                  el.skills.js +
+                  el.skills.react
                 } POINTS</p>
             </div>`;
   });
@@ -163,7 +166,7 @@ const addMembers = () => {
   noResults.classList.add("hide");
 };
 
-addMembers();
+members();
 //drop down list
 const dropDown = () => {
   const dropDownListOptions = document.querySelector(
@@ -188,7 +191,7 @@ const sortMembers = (event) => {
     }
   });
 
-  addMembers();
+  members();
 };
 dropDownList.addEventListener("click", dropDown);
 dropSownListOption.forEach((el) => el.addEventListener("click", sortMembers));
