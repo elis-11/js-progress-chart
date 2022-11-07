@@ -134,10 +134,10 @@ let listMembers = [
   },
 ];
 
-listMembers = listMembers.map((obj) => {
-  obj.skillsTotal =
-    obj.skills.html + obj.skills.css + obj.skills.js + obj.skills.react;
-  return obj;
+listMembers = listMembers.map((member) => {
+  member.skillsTotal =
+    member.skills.html + member.skills.css + member.skills.js + member.skills.react;
+  return member;
 });
 // console.log(listMembers);
 const dropDownList = document.querySelector(".drop-down-list");
@@ -146,19 +146,19 @@ const showcaseGoods = document.querySelector(".showcase-goods");
 
 const members = () => {
   showcaseGoods.innerHTML = "";
-  listMembers.forEach((el) => {
+  listMembers.forEach((member) => {
     showcaseGoods.innerHTML += `<div class="goods">
-                <img src="${el.img}" alt="${el.name}">
-                <h3 class="goods-text">${el.name}</h3>
-                <div>HTML: ${el.skills ? el.skills.html : " "}</div>
-                <div>CSS: ${el.skills ? el.skills.css : " "}</div>
-                <div>JS: ${el.skills ? el.skills.js : " "}</div>
-                <div>REACT: ${el.skills ? el.skills.react : " "}</div>
+                <img src="${member.img}" alt="${member.name}">
+                <h3 class="goods-text">${member.name}</h3>
+                <div>HTML: ${member.skills ? member.skills.html : " "}</div>
+                <div>CSS: ${member.skills ? member.skills.css : " "}</div>
+                <div>JS: ${member.skills ? member.skills.js : " "}</div>
+                <div>REACT: ${member.skills ? member.skills.react : " "}</div>
                 <p class="goods-text">${
-                  el.skills.html +
-                  el.skills.css +
-                  el.skills.js +
-                  el.skills.react
+                  member.skills.html +
+                  member.skills.css +
+                  member.skills.js +
+                  member.skills.react
                 } POINTS</p>
             </div>`;
   });
