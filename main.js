@@ -136,7 +136,10 @@ let listMembers = [
 
 listMembers = listMembers.map((member) => {
   member.skillsTotal =
-    member.skills.html + member.skills.css + member.skills.js + member.skills.react;
+    member.skills.html +
+    member.skills.css +
+    member.skills.js +
+    member.skills.react;
   return member;
 });
 // console.log(listMembers);
